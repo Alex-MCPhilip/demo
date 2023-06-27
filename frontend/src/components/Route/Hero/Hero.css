@@ -1,0 +1,91 @@
+/* .tb{
+  position: relative;
+
+}
+
+
+.tb img{
+    width: 25rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+
+
+
+.introduc{
+    background: -webkit-linear-gradient(120 deg, hsl(140, 21%, 95%),hsla(240, 1%, 17%, 0.96));
+    
+    -webkit-text-fill-color: transparent;
+  
+} */
+
+
+
+
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+
+.tb {
+    /* flex: 3; */
+    /* position: relative;  */
+} 
+
+@media only screen and (max-width: 768px) {
+    .tb {
+      flex: 1;
+      width: 100%;
+    }
+  }
+
+
+
+.tb img{
+    width: 25rem;
+
+    /* width: 200px; */
+    /* height: 300px; */
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: float 6s infinite ease alternate;
+
+}
+ 
+
+@media only screen and (max-width: 768px) {
+    .tb img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+
+  @keyframes animate {
+    to {
+      transform: translateY(20px);
+    }
+  }
